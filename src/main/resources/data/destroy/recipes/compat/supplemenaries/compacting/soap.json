@@ -1,0 +1,43 @@
+{
+  "type": "create:compacting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "supplementaries"
+    }
+  ],
+  "ingredients": [
+    {
+      "mixtureFluidWithSalt": "destroy:mixture",
+      "amount": 25,
+      "anion": "destroy:hydroxide",
+      "cation": "destroy:sodium_ion",
+      "concentration": 5.0
+    },
+    {
+      "fluid": "destroy:cream",
+      "amount": 250
+    }
+
+  ],
+  "results": [
+    {
+      "item": "supplementaries:soap_block"
+    },
+    {
+      "fluid": "destroy:mixture",
+      "amount": 10,
+      "nbt": {
+        "Mixture": {
+          "Contents": [
+            {
+              "Molecule": "destroy:glycerol",
+              "Concentration": 13.69
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "heatRequirement": "cooled"
+}

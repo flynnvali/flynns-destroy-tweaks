@@ -1,0 +1,45 @@
+{
+  "type": "destroy:aging",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    },
+    {
+      "item": "farmersdelight:tree_bark",
+      "count": 1
+    },
+    {
+      "tag": "destroy:yeast",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "fluid": "destroy:mixture",
+      "amount": 1000,
+      "nbt": {
+        "Mixture": {
+          "TranslationKey": "fluid.fdtweaks.wood_alcohol",
+          "Contents": [
+            {
+              "Molecule": "destroy:water",
+              "Concentration": 55.309
+            },
+            {
+              "Molecule": "destroy:methanol",
+              "Concentration": 0.082
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "processingTime": 9600
+}

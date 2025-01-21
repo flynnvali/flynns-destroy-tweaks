@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 250
+    },
+    {
+      "item": "destroy:raw_fries"
+    },
+    {
+      "item": "destroy:raw_fries"
+    }
+
+  ],
+  "results": [
+    {
+      "item": "fdtweaks:potato_starch"
+    }
+  ],
+  "heatRequirement": "heated"
+}
