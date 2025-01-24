@@ -7,6 +7,8 @@ import com.petrolpark.destroy.chemistry.legacy.index.*;
 
 import net.flynnvali.fdtweaks.chemistry.legacy.index.FDTweaksMolecules;
 import net.flynnvali.fdtweaks.item.FDTweaksItems;
+import net.flynnvali.fdtweaks.chemistry.legacy.index.FDTweaksGenericReaction;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -30,6 +32,9 @@ public class FDTweaks {
     public static final String MOD_ID = "fdtweaks";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+    public static ResourceLocation asResource(String path) {
+        return new ResourceLocation(MOD_ID, path);
+    };
 
 
 
@@ -55,6 +60,8 @@ public class FDTweaks {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(FDTweaksItems.POTATO_STARCH);
+            event.accept(FDTweaksItems.MYSTIC_ELECTRIC_SOURCE);
+            event.accept(FDTweaksItems.SILVER_POWDER);
 
         }
     }
@@ -89,6 +96,7 @@ public class FDTweaks {
             DestroyReactions.register();
             FDTweaksReactions.register();
             FDTweaksMolecules.register();
+            FDTweaksGenericReaction.register();
 
         });
 

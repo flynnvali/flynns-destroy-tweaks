@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/silver"
+      }
+    }
+    ],
+  "ingredients": [
+    {
+      "tag": "forge:ingots/silver"
+    }
+  ],
+  "results": [
+    {
+      "item": "fdtweaks:silver_powder"
+    }
+  ],
+  "processingTime": 100
+}

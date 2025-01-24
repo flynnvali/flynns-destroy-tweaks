@@ -11,6 +11,10 @@ public class FDTweaksItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, FDTweaks.MOD_ID);
     public static final RegistryObject<Item> POTATO_STARCH = ITEMS.register("potato_starch",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MYSTIC_ELECTRIC_SOURCE = ITEMS.register("mystic_electric_source",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_POWDER = ITEMS.register("silver_powder",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

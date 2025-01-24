@@ -1,0 +1,33 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    },
+    {
+      "item": "minecraft:trident"
+    },
+    {
+      "item": "minecraft:lightning_rod"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:porkchop"
+    },
+    {
+      "item": "minecraft:creeper_head"
+    }
+
+  ],
+  "results": [
+    {
+      "item": "fdtweaks:mystic_electric_source"
+    }
+
+  ],
+  "heatRequirement": "superheated"
+}
