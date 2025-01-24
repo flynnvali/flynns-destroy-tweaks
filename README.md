@@ -1,5 +1,5 @@
 Feature list:
-- Buffs Phytomining (and nerfing Magic Beetroot Seeds)
+- Buffs Phytomining (and nerfs Magic Beetroot Seeds)
 - Adds the Hofmann Elimination (elimination of primary amines), allowing for the creation of large molecules in survival mode! (it doesn't add much new actual gameplay, but it opens up much of Destroy's named compounds to creation!)
 - Silver ions, Silver Oxide, and Silver Powder to allow the Hofmann Elimination to take place (no silver ingot added, so many mods add that, if not you can still get the silver from phytomining nether crocite)
 - Wood Alcohol (methanol) aging from Farmer's Delight Tree Bark (compat, will be disabled if you don't have Farmer's Delight installed)
