@@ -93,6 +93,24 @@ public class FDTweaksReactions {
             .addProduct(DestroyMolecules.METHANE)
             .addProduct(DestroyMolecules.WATER, 2)
             .activationEnergy(50f)
+            .build(),
+    
+                HYDROGEN_CYANIDE_NEUTRALIZATION= builder()
+            .id("hcn_neutralization")
+            .addReactant(DestroyMolecules.HYDROGEN_CYANIDE)
+            .addReactant(DestroyMolecules.HYDROXIDE)
+            .addProduct(DestroyMolecules.CYANIDE)
+            .addProduct(DestroyMolecules.WATER)
+            .dontIncludeInJei()
+            .build(),
+
+            HYPOCHLOROUS_ACID_NEUTRALIZATION= builder()
+            .id("hypochlorous_acid_neutralization")
+            .addReactant(DestroyMolecules.HYPOCHLOROUS_ACID)
+            .addReactant(DestroyMolecules.HYDROXIDE)
+            .addProduct(DestroyMolecules.HYPOCHLORITE)
+            .addProduct(DestroyMolecules.WATER)
+            .dontIncludeInJei()
             .build();
 
 
